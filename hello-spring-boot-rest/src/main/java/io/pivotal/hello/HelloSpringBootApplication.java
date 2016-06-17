@@ -7,12 +7,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+
 @SpringBootApplication
 public class HelloSpringBootApplication {
 
 	Logger logger = LoggerFactory
 			.getLogger(HelloSpringBootApplication.class);
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(HelloSpringBootApplication.class, args);
 	}
