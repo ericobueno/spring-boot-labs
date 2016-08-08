@@ -16,17 +16,18 @@ public class HelloSpringBootApplication {
 
 	@Value("${greeting.english}")
 	String greeting;
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(HelloSpringBootApplication.class, args);
 	}
-	
+
 	@RequestMapping("/")
 	public String hello() {
-		
+
 		System.out.println("Hello called");
-		
+
 		return greeting + " Erico @" + new Date();
-		
+
 	}
+
 }
